@@ -1,9 +1,9 @@
 #!/bin/sh
 
 sudo apt install -y make gcc libreadline-dev zlib1g-dev
-cd /vagrant/
-wget https://ftp.postgresql.org/pub/source/v11.1/postgresql-11.1.tar.gz
-wget https://ftp.postgresql.org/pub/source/v11.1/postgresql-11.1.tar.gz.sha256
+cd /
+sudo wget https://ftp.postgresql.org/pub/source/v11.1/postgresql-11.1.tar.gz
+sudo wget https://ftp.postgresql.org/pub/source/v11.1/postgresql-11.1.tar.gz.sha256
 shasum -c postgresql-11.1.tar.gz.sha256
 gunzip postgresql-11.1.tar.gz
 tar xf postgresql-11.1.tar
